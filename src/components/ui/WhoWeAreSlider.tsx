@@ -7,6 +7,8 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import Image from "next/image";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import type { Swiper as SwiperType } from "swiper";
+
 
 const slides = [
   { image: "/images/docrive-about-1.jpg", alt: "Slide 1" },
@@ -19,7 +21,7 @@ const WhoWeAreSlider = () => {
   const prevRef = useRef<HTMLDivElement>(null);
   const nextRef = useRef<HTMLDivElement>(null);
   const progressRef = useRef<HTMLDivElement>(null);
-  const swiperRef = useRef<any>(null);
+  const swiperRef = useRef<SwiperType | null>(null);
 
   const restartProgress = () => {
     if (progressRef.current) {
