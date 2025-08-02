@@ -1,6 +1,6 @@
-import WhoWeAreSlider from "@/components/shared/WhoWeAreSlider";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
+import WhoWeAreSlider from "@/components/ui/WhoWeAreSlider";
 import React from "react";
 
 const WhoWeAre = () => {

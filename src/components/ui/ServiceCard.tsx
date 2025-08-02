@@ -16,7 +16,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   points,
 }) => {
   return (
-    <div className="relative group overflow-hidden bg-white border-b-4 border-secondary rounded-md">
+    <div className="relative group overflow-hidden bg-white border-b-4 border-secondary">
       {/* Animated background overlay */}
       <div className="absolute inset-0 bg-secondary translate-y-full group-hover:translate-y-0 transition-transform duration-500 z-0" />
 

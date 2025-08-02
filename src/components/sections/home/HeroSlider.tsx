@@ -15,6 +15,7 @@ import Image from "next/image";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Label from "@/components/ui/Label";
 import Button from "@/components/ui/Button";
+import type { Swiper as SwiperType } from "swiper";
 
 const slides = [
   {
@@ -41,7 +42,7 @@ const HeroSlider = () => {
   const prevRef = useRef<HTMLDivElement>(null);
   const nextRef = useRef<HTMLDivElement>(null);
   const progressRef = useRef<HTMLDivElement>(null);
-  const swiperRef = useRef<any>(null);
+ const swiperRef = useRef<SwiperType | null>(null);
 
   const restartProgress = () => {
     if (progressRef.current) {
