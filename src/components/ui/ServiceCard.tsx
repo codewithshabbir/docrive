@@ -1,13 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
-
-interface ServiceCardProps {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-  points: string[];
-}
+import { ServiceCardProps } from "@/types/ServiceCardProps";
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
   icon,
@@ -41,7 +35,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           ))}
         </ul>
 
-        <Button text="Learn more" link="/" docriveClass="mt-4" />
+        <Button text="Learn more" link="/" docriveClass="mt-4 bg-primary" />
       </div>
     </div>
   );

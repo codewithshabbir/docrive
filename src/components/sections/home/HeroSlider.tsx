@@ -1,12 +1,7 @@
 "use client";
 import React, { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  A11y,
-  EffectFade,
-  Autoplay,
-} from "swiper/modules";
+import { Navigation, A11y, EffectFade, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -22,7 +17,8 @@ const slides = [
     image: "/images/docrive-hero-img-1.jpg",
     label: "Complete care",
     title: "Providing medical care in our community",
-    description: "Our experienced team offers personalized treatment with a focus on patient comfort.",
+    description:
+      "Our experienced team offers personalized treatment with a focus on patient comfort.",
     buttonText: "Discover More",
     buttonLink: "/",
   },
@@ -30,7 +26,8 @@ const slides = [
     image: "/images/docrive-hero-img-2.jpg",
     label: "Trusted healthcare",
     title: "Quality medical care you deserve",
-    description: "Visit our clinic for reliable, friendly, and comprehensive medical support.",
+    description:
+      "Visit our clinic for reliable, friendly, and comprehensive medical support.",
     buttonText: "Discover More",
     buttonLink: "/",
   },
@@ -42,7 +39,7 @@ const HeroSlider = () => {
   const prevRef = useRef<HTMLDivElement>(null);
   const nextRef = useRef<HTMLDivElement>(null);
   const progressRef = useRef<HTMLDivElement>(null);
- const swiperRef = useRef<SwiperType | null>(null);
+  const swiperRef = useRef<SwiperType | null>(null);
 
   const restartProgress = () => {
     if (progressRef.current) {

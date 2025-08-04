@@ -9,7 +9,6 @@ import Image from "next/image";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import type { Swiper as SwiperType } from "swiper";
 
-
 const slides = [
   { image: "/images/docrive-about-1.jpg", alt: "Slide 1" },
   { image: "/images/docrive-about-2.jpg", alt: "Slide 2" },

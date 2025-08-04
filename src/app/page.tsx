@@ -1,4 +1,5 @@
 import HeroSlider from "@/components/sections/home/HeroSlider";
+import OurProcess from "@/components/sections/home/OurProcess";
 import WhatWeDo from "@/components/sections/home/WhatWeDo";
 import WhoWeAre from "@/components/sections/home/WhoWeAre";
 import Navbar from "@/components/shared/Navbar";
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroSlider/>
       <WhoWeAre/>
       <WhatWeDo/>
+      <OurProcess/>
     </>
   );
 }
